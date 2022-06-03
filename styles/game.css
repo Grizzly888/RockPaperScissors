@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "Boba";
+    src: url("../fonts/Boba.otf");
+}
+
+body{
+    margin: 0;
+    background-color: #082032;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.back{
+    position: absolute;
+    left:5%;
+    top:5%;
+    width:40px;
+}
+.hint{
+    position: absolute;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Boba';
+    color: #ff4c29;
+    left: 15%;
+    top:40%;
+}
+.hint p{
+    font-size: 36px;
+}
+.arrow{
+    width:60px;
+    height:16px;
+}
+h1{
+    margin-top:0;
+    font-family: 'Boba', Arial, sans-serif;
+    font-weight:normal;
+    font-style: normal;
+    text-align: center;
+    font-size: 100px;
+    color: #d2d2d2;
+}
+
+
+.container{
+    display: flex;
+    justify-content:center;
+}
+
+.icon{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    width:4em;
+    height:4em;
+    font-size: 2.5em;
+    margin: 1rem;
+    padding:10px;
+    border-radius: 20px;
+    background: #082032;
+    box-shadow: 12px 12px 24px #334756, -12px -12px 24px #2c394b;
+}
+img{
+    width: 100%;
+}
+.paper:hover, .rock:hover, .scissors:hover{
+    background-color: #ff4c29;
+    cursor: pointer;
+}
+
+
+.rock:active, .like:active, .scissors:active{
+    transform: scale(1.6);
+    transition: box-shadow .3s transform 6s cubic-bezier(.5, 4,1,2);
+    box-shadow: inset -2px -2px 8px rgb(204, 49, 2),
+    inset -2px -2px 12px rgba(217, 121, 121, 0.5),
+    inset 2px 2px 4px rgba(213, 57, 57, 0.1),
+    inset 2px 2px 8px rgba(228, 8, 8, 0.15);
+}
+
+#result{
+    font-family: 'Boba';
+    font-size: 70px;
+    text-align: center;
+}
