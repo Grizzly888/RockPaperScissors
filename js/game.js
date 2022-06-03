@@ -37,11 +37,7 @@ function playRound(playerSelection, computerSelection){
           break;
       }
 }
-function game(){
-    for(let i = 0; i < 5; i++){
-        //code 
-    }
-}
+
     document.getElementById("rock").addEventListener("click",() => playRound("rock", computerPlay()));
     document.getElementById("paper").addEventListener("click", () => playRound("paper",computerPlay()));
     document.getElementById("scissors").addEventListener("click", () => playRound("scissors",computerPlay()));
