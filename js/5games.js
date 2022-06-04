@@ -70,8 +70,10 @@ function game(playerSelection){
       if(userScore > computerScore){
         document.getElementById("myPopup").innerHTML = `You Won! <br /> Congratulations! <br/> <a href="../index.html">Close</a>`;
       }
-      else {
+      else if (userScore < computerScore) {
         document.getElementById("myPopup").innerHTML = `You Lost! <br/> Better luck next time! <br/> <a href="../index.html">Close</a>`;
+      } else {
+        document.getElementById("myPopup").innerHTML = `It's a draw! <br /> Fair Play! <br/> <a href="../index.html">Close</a>`
       }
       document.getElementById("myPopup").classList.toggle("show");
     }

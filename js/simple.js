@@ -64,8 +64,10 @@ function game(){
    if(userScore > computerScore){
     console.log("You Won a game of 5 rounds!")
   }
-  else {
+  else if (userScore < computerScore) {
     console.log("You Lost a game of 5 rounds!")
+  } else {
+    console.log("It's a draw!")
   }
 }
 
