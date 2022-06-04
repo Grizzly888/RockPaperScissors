@@ -75,7 +75,11 @@ function game(){
 }
 
 function getUserChoice(){
-    let userChoice = prompt("Enter Rock, Paper or Scissors").toLowerCase();
+  userChoice = prompt("Enter Rock, Paper or Scissors").toLowerCase();
+  while(userChoice != "rock" && userChoice != "paper" && userChoice != "scissors"){
+    alert("Please enter valid choice!");
+    userChoice = prompt("Enter Rock, Paper or Scissors").toLowerCase();
+  }
     return userChoice;
 }
 
