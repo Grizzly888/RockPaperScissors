@@ -14,6 +14,7 @@ function computerPlay() {
 
 function playRound(playerSelection, computerSelection){
     computerSelection = computerPlay();
+    console.log('________________');
     console.log('Game function: user choice is = ' + playerSelection);
     console.log('Game function: computer choice is = ' + computerSelection);
 
@@ -30,6 +31,7 @@ function playRound(playerSelection, computerSelection){
           console.log(`You win! ${playerSelection} beats ${computerSelection}`);
           console.log(`User score is ${userScore}.`);
           console.log(`Computer score is ${computerScore}.`);
+          console.log('________________');
 
           break;
         case "rockpaper":
@@ -44,6 +46,8 @@ function playRound(playerSelection, computerSelection){
           console.log(`You Lost! ${computerSelection} beats ${playerSelection}`);
           console.log(`User score is ${userScore}.`);
           console.log(`Computer score is ${computerScore}.`);
+          console.log('________________');
+
           break;
         case "rockrock":
         case "scissorsscissors":
@@ -53,6 +57,8 @@ function playRound(playerSelection, computerSelection){
           
           //Console output
           console.log("draw");
+          console.log('________________');
+
           break;
       }
 }
