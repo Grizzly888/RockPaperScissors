@@ -58,10 +58,13 @@ function playRound(playerSelection, computerSelection){
 }
 
 function game(){
-   for (var i = 0; i <5; i++){
+  alert(`Rock Paper Scissors is a hand game originating from China, usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. These shapes are "rock", "paper", and "scissors".`);
+  alert(`In order to play you need to choose either "rock", "paper", or "scissors"`);
+  alert("Remember: Rock beats Scissors, Paper beats Rock, Scissors beats Paper");
+  for (var i = 0; i <5; i++){
        playRound(getUserChoice());
-   }
-   if(userScore > computerScore){
+  }
+  if(userScore > computerScore){
     console.log("You Won a game of 5 rounds!")
   }
   else if (userScore < computerScore) {
